@@ -58,8 +58,6 @@ def get_ae_results(conference_regex, prefix):
         except yaml.YAMLError as e:
             print(f"Error parsing TOML for year {year}: {e}")
 
-
-
     return parsed_results
 
 def main():
@@ -73,6 +71,7 @@ def main():
     results = get_ae_results(args.conf_regex, args.prefix)
     for year in results.keys():
         print(f"{year}: {len(results[year])}")
+        print(results[year])
 
 if __name__ == "__main__":
     main()
