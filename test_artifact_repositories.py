@@ -1,11 +1,17 @@
 import requests
 import argparse
+import sys
 from sys_sec_artifacts_results_scrape import get_ae_results
 
 
 def check_url_existence(url):
     try:
         response = requests.head(url, allow_redirects=True)
+        if response.status_code == 429:
+            print("Too many requests detected, sleep 10 seconds and retry")
+            # sleep and redo
+            sys.sleep(10)
+            response = requests.head(url, allow_redirects=True)
         return response.status_code == 200
     except requests.RequestException as e:
         return False
