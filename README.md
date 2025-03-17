@@ -45,3 +45,25 @@ Selects which url_key to use in the artifacts results structure. 'artifact_url' 
 *--print_failed*
 
 Prints failed entries at the end of the script.
+
+### Collecting Statistics about Artifacts
+
+Collect stars, forks, views, downloads of artifacts depending on the artifact storage. Currently supported storages: Github, Zenodo, Figshare
+
+```
+python collect_artifact_stats.py
+```
+
+#### Arguments
+
+*--conf_regex*
+
+Regular expression to match the conference name assuming conference names have the format <name+year>. Default='.20[1|2][0-9]' Open Issue: Currently goes through all links in the page and as a result '.' matches every link.
+
+*--prefix*
+
+Select between sec or sysartifacts and possibly other artifact websites matching the same format. Default='sys'
+
+*--url_key*
+
+Selects which url_key to use in the artifacts results structure. 'artifact_url' or 'repository_url' are common values, but may differ by conference result page. Default: 'repository_url'
