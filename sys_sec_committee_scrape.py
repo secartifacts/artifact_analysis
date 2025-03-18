@@ -7,7 +7,6 @@ from sys_sec_scrape import get_soup, github_urls, download_file
 
 def get_committee_for_conference(conference, prefix):
     base_url = github_urls[prefix]['raw_base_url'] + conference
-
     # committee files are either named committee.md or organizers.md
     try:
         response = download_file(base_url + '/committee.md')
@@ -18,21 +17,21 @@ def get_committee_for_conference(conference, prefix):
             print(f"couldn't get committee for {conference}")
             return None
 
-    committee_text = response.split('Artifact Evaluation Committee')[1].strip()
-
+    committees_text = response.split('Artifact Evaluation Committee')
+    aec = committees_text[len(committees_text)-1].strip()
     committee = []
 
-
-    for line in committee_text.splitlines():
+    for line in aec.splitlines():
+        start = 2 if line.startswith('-') or line.startswith('*') else 0
         if ',' in line:
             # eurosys 2021
             # comma separated format with -/* name, affiliation
-            name = line[2:].split(',')[0].strip()
+            name = line[start:].split(',')[0].strip()
             affiliation = line.split(',')[1].strip()
         else:
             # eurosys 2022 and older
             # markdown list format with -/* name (affiliation)
-            name = line[2:line.find('(')].strip()
+            name = line[start:line.find('(')].strip()
             affiliation = line[line.find('(')+1:line.find(')')].strip()
 
         committee.append({'name': name, 'affiliation': affiliation})
@@ -50,7 +49,9 @@ def get_committees(conference_regex, prefix):
             if name in results:
                 continue
             # add year
-            results[name] = get_committee_for_conference(name, prefix)
+            committee = get_committee_for_conference(name, prefix)
+            if committee:
+                results[name] = committee
 
     return results
 

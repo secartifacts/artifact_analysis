@@ -4,7 +4,7 @@ Analyzing artifact websites like sec/sysartifacts.github.io using simple python 
 
 ### Artifact Results Scrapping
 
-Returns a dictionary of conference name + year as the key and the artifacts entry yaml found in the results.md header.
+Returns a dictionary of conference name + year as the key and the artifacts entry yaml found in the results.md header. Prints the artifacts found per conference + year.
 
 ```
 python sys-sec-artifacts-results-scrape.py
@@ -67,3 +67,25 @@ Select between sec or sysartifacts and possibly other artifact websites matching
 *--url_key*
 
 Selects which url_key to use in the artifacts results structure. 'artifact_url' or 'repository_url' are common values, but may differ by conference result page. Default: 'repository_url'
+
+### Artifact Evaluation Committee Scrapping
+
+Returns a dictionary of conference name + year as the key and the artifacts evaluation committee as a list of ```{'name': name, 'affiliation': affiliation}```. Prints the AEC members found per conference + year.
+
+```
+python sys-sec-committee-scrape.py
+```
+
+#### Arguments
+
+*--conf_regex*
+
+Regular expression to match the conference name assuming conference names have the format <name+year>. Default='.20[1|2][0-9]' Open Issue: Currently goes through all links in the page and as a result '.' matches every link.
+
+*--prefix*
+
+Select between sec or sysartifacts and possibly other artifact websites matching the same format. Default='sys'
+
+*--print*
+
+Print the list of each artifact evaluation committee per year.
