@@ -3,28 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import yaml
 import argparse
-
-github_urls= {
-    'sys': {
-        'base_url': "https://github.com/sysartifacts/sysartifacts.github.io/blob/master/_conferences/",
-        'raw_base_url': "https://raw.githubusercontent.com/sysartifacts/sysartifacts.github.io/master/_conferences/"
-    },
-    'sec': {
-        'base_url': "https://github.com/secartifacts/secartifacts.github.io/blob/master/_conferences/",
-        'raw_base_url': "https://raw.githubusercontent.com/secartifacts/secartifacts.github.io/master/_conferences/"
-    }
-}
-
-def get_soup(url):
-    response = requests.get(url)
-    response.raise_for_status()
-    return BeautifulSoup(response.text, 'html.parser')
-
-def download_file(url, save_path):
-    response = requests.get(url)
-    response.raise_for_status()
-    with open(save_path, 'wb') as file:
-        file.write(response.content)
+from sys_sec_scrape import get_soup, github_urls, download_file
 
 def get_ae_results(conference_regex, prefix):
     results = {}
@@ -38,9 +17,9 @@ def get_ae_results(conference_regex, prefix):
                 continue
             # add year
             file_url = github_urls[prefix]['raw_base_url'] + name + '/results.md'
-            response = requests.get(file_url)
+
             try:
-                response.raise_for_status()
+                response = download_file(file_url)
                 content = response.text
                 results[name] = content
                 print(f'got {name}')
