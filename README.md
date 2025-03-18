@@ -89,3 +89,33 @@ Select between sec or sysartifacts and possibly other artifact websites matching
 *--print*
 
 Print the list of each artifact evaluation committee per year.
+
+### Artifact Evaluation Committee Statistics
+
+Calculates various statistics about the AEC
+
+```
+python committee_statistics.py
+```
+
+#### Arguments
+
+*--conf_regex*
+
+Regular expression to match the conference name assuming conference names have the format <name+year>. Default='.20[1|2][0-9]' Open Issue: Currently goes through all links in the page and as a result '.' matches every link.
+
+*--prefix*
+
+Select between sec or sysartifacts and possibly other artifact websites matching the same format. Default='sys'
+
+*--analyze_affiliation*
+
+Calculates how many times members of an affiliation have participated in matching conferences and prints a sorted list of counts.
+
+*--analyze_affiliation_per_conference*
+
+Calculates how many times members of an affiliation have participated in matching conferences and prints the number for each matching conference.
+
+*--analyze_aec_retention*
+
+Analyzes the similarity of AEC members across pairs of matching conferences and prints a table with each pairs count.
