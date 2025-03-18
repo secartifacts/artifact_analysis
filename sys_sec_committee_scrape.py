@@ -23,16 +23,20 @@ def get_committee_for_conference(conference, prefix):
 
     for line in aec.splitlines():
         start = 2 if line.startswith('-') or line.startswith('*') else 0
-        if ',' in line:
+        if '(' in line and ')' in line:
+            # eurosys 2022 and older
+            # markdown list format with -/* name (affiliation)
+            name = line[start:line.find('(')].strip()
+            affiliation = line[line.find('(')+1:line.find(')')].strip()
+        elif ',' in line:
             # eurosys 2021
             # comma separated format with -/* name, affiliation
             name = line[start:].split(',')[0].strip()
             affiliation = line.split(',')[1].strip()
         else:
-            # eurosys 2022 and older
-            # markdown list format with -/* name (affiliation)
-            name = line[start:line.find('(')].strip()
-            affiliation = line[line.find('(')+1:line.find(')')].strip()
+            # unknown format
+            name = line
+            affiliation = ''
 
         committee.append({'name': name, 'affiliation': affiliation})
 
@@ -60,7 +64,7 @@ def main():
     parser = argparse.ArgumentParser(description='Scraping results of sys/secartifacts.github.io from conferences.')
     parser.add_argument('--conf_regex', type=str, default='.20[1|2][0-9]', help='Regular expression for conference name and or years')
     parser.add_argument('--prefix', type=str, default='sys', help='Prefix of artifacts website like sys for sysartifacts or sec for secartifacts')
-    parser.add_argument('--print', type=str, default=False, help='Print committees')
+    parser.add_argument('--print', action='store_true', help='Print committees')
 
     args = parser.parse_args()
 
