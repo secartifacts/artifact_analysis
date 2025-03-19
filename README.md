@@ -48,7 +48,7 @@ Prints failed entries at the end of the script.
 
 ### Collecting Statistics about Artifacts
 
-Collect stars, forks, views, downloads of artifacts depending on the artifact storage. Currently supported storages: Github, Zenodo, Figshare
+Collect stars, forks, views, downloads, and last update date of artifacts depending on the artifact storage. Currently supported storages: Github, Zenodo, Figshare. If -1 or NA is printed, the view/download count or last date of update is not available.
 
 ```
 python collect_artifact_stats.py
@@ -119,3 +119,7 @@ Calculates how many times members of an affiliation have participated in matchin
 *--analyze_aec_retention*
 
 Analyzes the similarity of AEC members across pairs of matching conferences and prints a table with each pairs count.
+
+*--analyze_by_country*
+
+Analyzes the country location of each AEC member and prints the number of involved AEC members per country for each matching conference

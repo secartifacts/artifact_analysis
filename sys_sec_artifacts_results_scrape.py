@@ -19,9 +19,7 @@ def get_ae_results(conference_regex, prefix):
             file_url = github_urls[prefix]['raw_base_url'] + name + '/results.md'
 
             try:
-                response = download_file(file_url)
-                content = response.text
-                results[name] = content
+                results[name] = download_file(file_url)
                 print(f'got {name}')
             except requests.exceptions.HTTPError as e:
                 print("couldn't get " + name)

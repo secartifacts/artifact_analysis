@@ -15,7 +15,7 @@ def zenodo_stats(url):
     response = requests.get(f'https://zenodo.org/api/records/{rec}')
     if response.status_code == 200:
         record = response.json()
-        return {'zenodo_views': record['stats']['unique_views'],'zenodo_downloads': record['stats']['unique_downloads']}
+        return {'zenodo_views': record['stats']['unique_views'],'zenodo_downloads': record['stats']['unique_downloads'], 'updated_at': record['updated']}
     else:
         print(f'Could not collect stats for {url}')
         return
@@ -31,18 +31,23 @@ def figshare_stats(url):
         record = response.json()
         views = record['totals']
     else:
-        print(f'Could not collect stats for {url}')
-        return
+        views = -1
     # downloads
     response = requests.get('https://stats.figshare.com/total/downloads/article/'+article_id)
     if response.status_code == 200:
         record = response.json()
         downloads = record['totals']
     else:
-        print(f'Could not collect stats for {url}')
-        return
+        downloads = -1
 
-    return {'figshare_views':views, 'figshare_downloads': downloads}
+    response = requests.get(f'https://api.figshare.com/v2/articles/{article_id}')
+    if response.status_code == 200:
+        record = response.json()
+        updated = record['modified_date']
+    else:
+        updated = 'NA'
+
+    return {'figshare_views':views, 'figshare_downloads': downloads, 'updated_at': updated}
 
 def github_stats(url):
     repo = url.split('github.com/')[1]
@@ -62,7 +67,7 @@ def github_stats(url):
     response = requests.get(f'https://api.github.com/repos/{repo}')
     if response.status_code == 200:
         repo_record = response.json()
-        return {'github_forks': repo_record.get('forks_count', 0),'github_stars': repo_record.get('stargazers_count', 0)}
+        return {'github_forks': repo_record.get('forks_count', 0),'github_stars': repo_record.get('stargazers_count', 0), 'updated_at': repo_record.get('updated_at', 'NA')}
     else:
         print(f'Could not collect stats for {url}')
         return
