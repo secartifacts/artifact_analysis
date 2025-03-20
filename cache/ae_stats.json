@@ -1,0 +1,1992 @@
+{
+    "eurosys2022": [
+        {
+            "title": "OS Scheduling with Nest: Keeping Tasks Close Together on Warm Cores",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519585",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6344960",
+            "repository_url": "https://gitlab.inria.fr/nest-public/nest-artifact",
+            "summary": "nest",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 241,
+                "zenodo_downloads": 27,
+                "updated_at": "2022-03-11T01:49:31.247734+00:00",
+                "created_at": "2022-03-10T18:21:08.097636+00:00"
+            }
+        },
+        {
+            "title": "Improving Scalability of Database Systems by Reshaping User Parallel I/O",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519570",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6336004",
+            "repository_url": "https://github.com/NingBellWind/AppleS_Artifact",
+            "summary": "reshapeio",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 114,
+                "zenodo_downloads": 6,
+                "updated_at": "2022-10-01T08:57:32Z",
+                "created_at": "2022-02-01T17:44:01Z",
+                "github_forks": 1,
+                "github_stars": 1,
+                "pushed_at": "2022-03-07T21:32:41Z",
+                "name": "NingBellWind/AppleS_Artifact"
+            }
+        },
+        {
+            "title": "A New Benchmark Harness for Systematic and Robust Evaluation of Streaming State Stores",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519592",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6347736",
+            "repository_url": "https://github.com/CASP-Systems-BU/Gadget",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 169,
+                "zenodo_downloads": 15,
+                "updated_at": "2024-04-24T19:54:30Z",
+                "created_at": "2021-10-25T19:39:58Z",
+                "github_forks": 4,
+                "github_stars": 17,
+                "pushed_at": "2024-04-24T19:54:26Z",
+                "name": "CASP-Systems-BU/Gadget"
+            }
+        },
+        {
+            "title": "SafePM: A Sanitizer for Persistent Memory",
+            "badges": "available,functional,reproduced",
+            "award": "Distinguished Artifact Honorable Mention",
+            "paper_url": "10.1145/3492321.3519574",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6338745",
+            "repository_url": "https://github.com/mstniy/safepm",
+            "summary": "safepm",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 165,
+                "zenodo_downloads": 12,
+                "updated_at": "2024-11-11T02:34:25Z",
+                "created_at": "2021-04-19T09:16:57Z",
+                "github_forks": 2,
+                "github_stars": 3,
+                "pushed_at": "2022-03-08T18:41:28Z",
+                "name": "mstniy/safepm"
+            }
+        },
+        {
+            "title": "Building an Efficient Key-Value Store in a Flexible Address Space",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519555",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6345713",
+            "repository_url": "https://github.com/flexible-address-space/eurosys22-artifact",
+            "summary": "flexibleaddrspace",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 246,
+                "zenodo_downloads": 27,
+                "updated_at": "2023-03-28T23:33:09Z",
+                "created_at": "2022-02-13T19:34:23Z",
+                "github_forks": 0,
+                "github_stars": 2,
+                "pushed_at": "2023-03-28T23:25:44Z",
+                "name": "flexible-address-space/eurosys22-artifact"
+            }
+        },
+        {
+            "title": "BetrFS: A Compleat File System for Commodity SSDs",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519571",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6345303",
+            "repository_url": "https://github.com/oscarlab/betrfs",
+            "summary": "betrfs",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 159,
+                "zenodo_downloads": 11,
+                "updated_at": "2025-01-31T13:02:59Z",
+                "created_at": "2015-02-13T21:46:28Z",
+                "github_forks": 28,
+                "github_stars": 287,
+                "pushed_at": "2024-06-09T20:24:42Z",
+                "name": "oscarlab/betrfs"
+            }
+        },
+        {
+            "title": "PKRU-Safe: Automatically Locking Down the Heap Between Safe and Unsafe Languages",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519582",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6336301",
+            "repository_url": "https://github.com/securesystemslab/PKRU-Safe",
+            "summary": "pkrusafe",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 130,
+                "zenodo_downloads": 19,
+                "updated_at": "2024-12-16T19:08:13Z",
+                "created_at": "2022-02-01T00:50:47Z",
+                "github_forks": 4,
+                "github_stars": 19,
+                "pushed_at": "2022-03-10T16:08:51Z",
+                "name": "securesystemslab/PKRU-Safe"
+            }
+        },
+        {
+            "title": "Rolis: a software approach to efficiently replicating multi-core transactions",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519561",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6335844",
+            "repository_url": "https://github.com/shenweihai1/rolis-eurosys2022",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 130,
+                "zenodo_downloads": 8,
+                "updated_at": "2024-09-22T13:11:13Z",
+                "created_at": "2022-01-28T20:40:52Z",
+                "github_forks": 4,
+                "github_stars": 3,
+                "pushed_at": "2024-02-26T23:33:54Z",
+                "name": "shenweihai1/rolis-eurosys2022"
+            }
+        },
+        {
+            "title": "KASLR in the age of MicroVMs",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519578",
+            "repository_url": "https://github.com/bencw12/in-monitor-rando-benchmarking",
+            "summary": "kaslrvm",
+            "repository_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 3,
+                "updated_at": "2024-09-05T03:05:44Z",
+                "created_at": "2022-01-26T22:53:47Z",
+                "pushed_at": "2022-03-30T21:45:04Z",
+                "name": "bencw12/in-monitor-rando-benchmarking"
+            }
+        },
+        {
+            "title": "OPEC: Operation-based Security Isolation for Bare-metal Embedded Systems",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519573",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6336200",
+            "repository_url": "https://github.com/XiaZhouZero/OPEC",
+            "summary": "opec",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 193,
+                "zenodo_downloads": 18,
+                "updated_at": "2024-03-26T11:07:27Z",
+                "created_at": "2022-01-27T13:51:46Z",
+                "github_forks": 2,
+                "github_stars": 9,
+                "pushed_at": "2022-04-07T07:41:34Z",
+                "name": "XiaZhouZero/OPEC"
+            }
+        },
+        {
+            "title": "Jiffy: Elastic Far-Memory for Stateful Serverless Analytics.",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519587",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6349596",
+            "repository_url": "https://github.com/resource-disaggregation/jiffy-artifact",
+            "summary": "jiffy",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 79,
+                "zenodo_downloads": 6,
+                "updated_at": "2022-03-13T01:49:03.308538+00:00",
+                "created_at": "2022-03-12T22:37:10.838613+00:00"
+            }
+        },
+        {
+            "title": "D3: A Dynamic Deadline-Driven Approach for Building Autonomous Vehicles",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519576",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6345350",
+            "repository_url": "https://github.com/erdos-project/erdos",
+            "summary": "d3",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 95,
+                "zenodo_downloads": 13,
+                "updated_at": "2025-03-09T17:01:04Z",
+                "created_at": "2018-11-05T20:19:05Z",
+                "github_forks": 44,
+                "github_stars": 203,
+                "pushed_at": "2022-08-27T19:25:37Z",
+                "name": "erdos-project/erdos"
+            }
+        },
+        {
+            "title": "Isolating at the Hardware Limit with Virtines",
+            "badges": "available,functional,reproduced",
+            "award": "Distinguished Artifact",
+            "paper_url": "10.1145/3492321.3519553",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6350453",
+            "repository_url": "https://github.com/virtines/wasp",
+            "summary": "virtines",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 249,
+                "zenodo_downloads": 14,
+                "updated_at": "2024-09-22T21:38:43Z",
+                "created_at": "2021-10-10T17:10:12Z",
+                "github_forks": 7,
+                "github_stars": 18,
+                "pushed_at": "2023-03-31T17:43:23Z",
+                "name": "virtines/wasp"
+            }
+        },
+        {
+            "title": "Unicorn: Reasoning about Configurable System Performance through the lens of Causality",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519575",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6360540",
+            "repository_url": "https://github.com/softsys4ai/unicorn",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 138,
+                "zenodo_downloads": 8,
+                "updated_at": "2024-10-21T06:46:21Z",
+                "created_at": "2019-03-19T19:21:07Z",
+                "github_forks": 7,
+                "github_stars": 42,
+                "pushed_at": "2022-04-10T16:01:27Z",
+                "name": "softsys4ai/unicorn"
+            }
+        },
+        {
+            "title": "GNNLab: A Factored System for Sample-based GNN Training over GPUs",
+            "badges": "available,functional,reproduced",
+            "award": "Distinguished Artifact Honorable Mention",
+            "paper_url": "10.1145/3492321.3519557",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6347456",
+            "repository_url": "https://github.com/SJTU-IPADS/fgnn-artifacts/tree/0abc7182",
+            "summary": "gnnlab",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 203,
+                "zenodo_downloads": 17,
+                "updated_at": "2024-05-23T09:14:12Z",
+                "created_at": "2022-01-25T12:36:50Z",
+                "github_forks": 5,
+                "github_stars": 17,
+                "pushed_at": "2022-04-25T14:41:48Z",
+                "name": "SJTU-IPADS/fgnn-artifacts"
+            }
+        },
+        {
+            "title": "VMSH: Hypervisor-agnostic Guest Overlays for VMs",
+            "badges": "available,functional,reproduced",
+            "award": "Distinguished Artifact Honorable Mention",
+            "paper_url": "10.1145/3492321.3519589",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6337102",
+            "repository_url": "https://github.com/Mic92/vmsh",
+            "summary": "vmsh",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 109,
+                "zenodo_downloads": 9,
+                "updated_at": "2025-01-30T23:04:56Z",
+                "created_at": "2021-02-15T13:33:10Z",
+                "github_forks": 8,
+                "github_stars": 150,
+                "pushed_at": "2025-03-16T03:22:33Z",
+                "name": "Mic92/vmsh"
+            }
+        },
+        {
+            "title": "Kite: Lightweight Critical Service Domains full strip note",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519586",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6348174",
+            "repository_url": "https://github.com/ssrg-vt/kite",
+            "summary": "kite",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 125,
+                "zenodo_downloads": 26,
+                "updated_at": "2023-06-11T22:26:53Z",
+                "created_at": "2022-01-31T04:48:12Z",
+                "github_forks": 0,
+                "github_stars": 3,
+                "pushed_at": "2022-09-18T20:36:45Z",
+                "name": "ssrg-vt/kite"
+            }
+        },
+        {
+            "title": "Characterizing the Performance of Intel Optane Persistent Memory -- A Close Look at its On-DIMM Buffering",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519556",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6342303",
+            "repository_url": "https://github.com/lingfenghsiang/Persistent-Memory-Study",
+            "summary": "optane",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 102,
+                "zenodo_downloads": 14,
+                "updated_at": "2024-12-05T07:42:01Z",
+                "created_at": "2022-01-26T00:57:17Z",
+                "github_forks": 4,
+                "github_stars": 26,
+                "pushed_at": "2022-03-31T04:15:41Z",
+                "name": "lingfenghsiang/Persistent-Memory-Study"
+            }
+        },
+        {
+            "title": "LiteReconfig: Cost and Content Aware Reconfiguration of Video Object Detection Systems for Mobile GPUs",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519577",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6345733",
+            "repository_url": "https://github.com/StarsThu2016/LiteReconfig_AE",
+            "summary": "litereconfig",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 341,
+                "zenodo_downloads": 55,
+                "updated_at": "2023-04-14T12:00:21Z",
+                "created_at": "2022-01-25T22:28:54Z",
+                "github_forks": 1,
+                "github_stars": 2,
+                "pushed_at": "2022-03-11T06:29:04Z",
+                "name": "StarsThu2016/LiteReconfig_AE"
+            }
+        },
+        {
+            "title": "DAMYSUS: Streamlined BFT Consensus Leveraging Trusted Components",
+            "badges": "available,functional,reproduced",
+            "paper_url": "10.1145/3492321.3519568",
+            "repository_url": "https://github.com/vrahli/damysus",
+            "summary": "damysus",
+            "repository_url_exists": true,
+            "stats": {
+                "github_forks": 3,
+                "github_stars": 11,
+                "updated_at": "2025-02-12T10:58:54Z",
+                "created_at": "2022-01-26T21:38:02Z",
+                "pushed_at": "2025-01-30T14:47:29Z",
+                "name": "vrahli/damysus"
+            }
+        },
+        {
+            "title": "Optimizing the Interval-centric Distributed Computing Model for Temporal Graph Algorithms",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3519588",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6337790",
+            "repository_url": "https://github.com/dream-lab/wicm/tree/Eurosys2022",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 151,
+                "zenodo_downloads": 8,
+                "updated_at": "2025-01-26T12:39:39Z",
+                "created_at": "2021-07-22T06:38:16Z",
+                "github_forks": 2,
+                "github_stars": 3,
+                "pushed_at": "2022-04-04T13:35:08Z",
+                "name": "dream-lab/wicm"
+            }
+        },
+        {
+            "title": "Out-Of-Order BackProp: An Effective Scheduling Technique for Deep Learning",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3519563",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6345869",
+            "repository_url": "https://github.com/mlsys-seo/ooo-backprop",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 123,
+                "zenodo_downloads": 11,
+                "updated_at": "2024-12-09T12:03:36Z",
+                "created_at": "2022-01-27T13:41:59Z",
+                "github_forks": 5,
+                "github_stars": 25,
+                "pushed_at": "2022-12-05T05:10:04Z",
+                "name": "mlsys-seo/ooo-backprop"
+            }
+        },
+        {
+            "title": "Narwhal and Tusk: A DAG-based Mempool and Efficient BFT Consensus",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3519594",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6353717",
+            "repository_url": "https://github.com/asonnino/narwhal",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 162,
+                "zenodo_downloads": 13,
+                "updated_at": "2025-02-27T06:23:09Z",
+                "created_at": "2021-06-28T21:19:43Z",
+                "github_forks": 42,
+                "github_stars": 97,
+                "pushed_at": "2024-10-12T18:50:24Z",
+                "name": "asonnino/narwhal"
+            }
+        },
+        {
+            "title": "Varuna: Scalable, Low-cost Training of Massive Deep Learning Models",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3519584",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6359660",
+            "repository_url": "https://github.com/microsoft/varuna/",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 188,
+                "zenodo_downloads": 19,
+                "updated_at": "2025-03-18T16:43:36Z",
+                "created_at": "2021-06-29T05:02:34Z",
+                "github_forks": 29,
+                "github_stars": 248,
+                "pushed_at": "2024-07-25T11:10:38Z",
+                "name": "microsoft/varuna"
+            }
+        },
+        {
+            "title": "State Machine Replication Scalability Made Simple",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3519579",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6344032",
+            "repository_url": "https://github.com/hyperledger-labs/mirbft/tree/research-iss",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 120,
+                "zenodo_downloads": 9,
+                "updated_at": "2025-01-07T22:47:30Z",
+                "created_at": "2019-04-12T18:15:18Z",
+                "github_forks": 32,
+                "github_stars": 158,
+                "pushed_at": "2023-09-19T11:23:53Z",
+                "name": "hyperledger-labs/mirbft"
+            }
+        },
+        {
+            "title": "Verified Programs Can Party: Optimizing Kernel Extensions via Post-Verification In-Kernel Merging",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3519562",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6336103",
+            "repository_url": "https://github.com/synercys/eurosys-kfuse-artifact",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 145,
+                "zenodo_downloads": 19,
+                "updated_at": "2024-06-10T23:22:45Z",
+                "created_at": "2022-01-24T20:59:39Z",
+                "github_forks": 3,
+                "github_stars": 5,
+                "pushed_at": "2022-03-21T23:10:11Z",
+                "name": "synercys/eurosys-kfuse-artifact"
+            }
+        },
+        {
+            "title": "Beating the I/O bottleneck: A case for log-structured virtual disks",
+            "badges": "available,functional",
+            "paper_url": "10.1145/3492321.3524271",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6354775",
+            "repository_url": "https://github.com/asch/dis",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 96,
+                "zenodo_downloads": 8,
+                "updated_at": "2025-02-19T06:44:24Z",
+                "created_at": "2020-10-15T12:14:18Z",
+                "github_forks": 7,
+                "github_stars": 63,
+                "pushed_at": "2022-03-14T23:14:21Z",
+                "name": "asch/dis"
+            }
+        },
+        {
+            "title": "Sharing is Caring: Secure and Efficient Shared Memory Support for MVEEs",
+            "badges": "available",
+            "paper_url": "10.1145/3492321.3519558",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6360235",
+            "repository_url": "https://github.com/ReMon-MVEE/ReMon",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 119,
+                "zenodo_downloads": 10,
+                "updated_at": "2024-09-03T20:55:04Z",
+                "created_at": "2016-05-21T00:00:26Z",
+                "github_forks": 12,
+                "github_stars": 27,
+                "pushed_at": "2025-03-07T09:35:13Z",
+                "name": "ReMon-MVEE/ReMon"
+            }
+        },
+        {
+            "title": "FaaSnap: FaaS Made Fast Using Snapshot-based VMs",
+            "badges": "available",
+            "paper_url": "10.1145/3492321.3524270",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6360833",
+            "repository_url": "https://github.com/ucsdsysnet/faasnap",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 108,
+                "zenodo_downloads": 5,
+                "updated_at": "2025-01-21T21:12:07Z",
+                "created_at": "2022-03-14T17:40:40Z",
+                "github_forks": 7,
+                "github_stars": 27,
+                "pushed_at": "2022-03-20T19:42:02Z",
+                "name": "ucsdsysnet/faasnap"
+            }
+        },
+        {
+            "title": "DeepRest: Deep Resource Estimation for Interactive Microservices",
+            "badges": "available",
+            "paper_url": "10.1145/3492321.3519564",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6335690",
+            "repository_url": "https://github.com/IBM/api-tracing-app-management",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 142,
+                "zenodo_downloads": 12,
+                "updated_at": "2025-01-09T10:36:31Z",
+                "created_at": "2021-08-11T22:48:18Z",
+                "github_forks": 6,
+                "github_stars": 13,
+                "pushed_at": "2024-04-06T00:40:02Z",
+                "name": "IBM/DeepRest"
+            }
+        },
+        {
+            "title": "Tebis: Index Shipping for Efficient Replication in LSM Key-Value Stores",
+            "badges": "available",
+            "paper_url": "10.1145/3492321.3519572",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6349594",
+            "repository_url": "https://github.com/CARV-ICS-FORTH/tebis",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 238,
+                "zenodo_downloads": 19,
+                "updated_at": "2024-11-26T10:25:23Z",
+                "created_at": "2022-02-01T13:52:12Z",
+                "github_forks": 0,
+                "github_stars": 19,
+                "pushed_at": "2024-07-25T13:10:06Z",
+                "name": "CARV-ICS-FORTH/tebis"
+            }
+        },
+        {
+            "title": "p2KVS: a Portable 2-Dimensional Parallelizing Framework to Improve Scalability of Key-value Stores on SSDs",
+            "badges": "available",
+            "paper_url": "10.1145/3492321.3519567",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6336196",
+            "repository_url": "https://github.com/luziyi23/p2KVS/",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 100,
+                "zenodo_downloads": 9,
+                "updated_at": "2023-11-16T01:43:08Z",
+                "created_at": "2021-07-21T12:18:12Z",
+                "github_forks": 5,
+                "github_stars": 8,
+                "pushed_at": "2022-04-28T02:05:27Z",
+                "name": "luziyi23/p2KVS"
+            }
+        },
+        {
+            "title": "Memory Deduplication for Serverless Computing with Medes",
+            "badges": "available",
+            "paper_url": "10.1145/3492321.3524272",
+            "artifact_url": "https://doi.org/10.5281/zenodo.6374411",
+            "repository_url": "https://github.com/DivyanshuSaxena/Medes",
+            "repository_url_exists": true,
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 134,
+                "zenodo_downloads": 10,
+                "updated_at": "2024-11-21T06:26:47Z",
+                "created_at": "2022-03-21T20:37:36Z",
+                "github_forks": 6,
+                "github_stars": 12,
+                "pushed_at": "2022-03-21T22:11:50Z",
+                "name": "utnslab/Medes"
+            }
+        }
+    ],
+    "eurosys2023": [
+        {
+            "title": "DRAMHiT: A Hash Table Architected for the Speed of DRAM",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3587457",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7719328",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 102,
+                "zenodo_downloads": 20,
+                "updated_at": "2023-03-15T02:27:11.172479+00:00",
+                "created_at": "2023-03-14T20:01:08.277418+00:00"
+            }
+        },
+        {
+            "title": "NearPM: A Near-memory Processing Prototype for Storage-class Workloads",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587456",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7738934",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 44,
+                "zenodo_downloads": 4,
+                "updated_at": "2023-03-16T02:26:46.058845+00:00",
+                "created_at": "2023-03-15T21:48:30.157733+00:00"
+            }
+        },
+        {
+            "title": "FlexPass: A Case for Flexible Credit-based Transport for Datacenter Networks",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3587453",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7737994",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 54,
+                "zenodo_downloads": 16,
+                "updated_at": "2023-03-16T02:26:47.453652+00:00",
+                "created_at": "2023-03-15T15:56:11.845802+00:00"
+            }
+        },
+        {
+            "title": "Model Checking Guided Testing for Distributed Systems",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3587442",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7654817",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 97,
+                "zenodo_downloads": 6,
+                "updated_at": "2023-02-20T02:26:37.747360+00:00",
+                "created_at": "2023-02-19T15:30:28.337515+00:00"
+            }
+        },
+        {
+            "title": "R2C: AOCR-Resilient Diversity with Reactive and Reflective Camouflage",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587439",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7728972",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 60,
+                "zenodo_downloads": 13,
+                "updated_at": "2023-03-15T02:27:11.455626+00:00",
+                "created_at": "2023-03-13T13:32:33.577844+00:00"
+            }
+        },
+        {
+            "title": "Omni-Paxos: Breaking the Barriers of Partial Connectivity",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3587441",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7737776",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 172,
+                "zenodo_downloads": 9,
+                "updated_at": "2023-03-16T02:26:45.650613+00:00",
+                "created_at": "2023-03-15T15:05:08.963560+00:00"
+            }
+        },
+        {
+            "title": "Aggregate VM: Why Reduce or Evict VM's Resources When You Can Borrow Them From Other Nodes?",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3587452",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7725803",
+            "artifact_url_exists": true
+        },
+        {
+            "title": "Pocket: ML Serving from the Edge",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587459",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7734815",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 122,
+                "zenodo_downloads": 17,
+                "updated_at": "2023-03-15T02:27:12.474174+00:00",
+                "created_at": "2023-03-14T20:55:56.560076+00:00"
+            }
+        },
+        {
+            "title": "FrozenHot Cache: Rethinking Cache Management for Modern Software",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587446",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7733671",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 67,
+                "zenodo_downloads": 14,
+                "updated_at": "2023-03-15T02:27:11.189694+00:00",
+                "created_at": "2023-03-14T14:42:59.546560+00:00"
+            }
+        },
+        {
+            "title": "Unikernel Linux (UKL)",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587458",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7737645",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 94,
+                "zenodo_downloads": 13,
+                "updated_at": "2023-03-16T02:26:45.798912+00:00",
+                "created_at": "2023-03-15T16:51:35.767006+00:00"
+            }
+        },
+        {
+            "title": "DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587434",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7721895",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 50,
+                "zenodo_downloads": 2,
+                "updated_at": "2023-03-12T14:27:17.748607+00:00",
+                "created_at": "2023-03-11T08:19:34.520244+00:00"
+            }
+        },
+        {
+            "title": "Mumak: efficient and black-box bug detection for Persistent Memory",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587447",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7737117",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 56,
+                "zenodo_downloads": 9,
+                "updated_at": "2023-03-16T02:26:45.799639+00:00",
+                "created_at": "2023-03-15T12:20:30.731502+00:00"
+            }
+        },
+        {
+            "title": "Effective Performance Issue Diagnosis with Value-Assisted Cost Profiling",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3587444",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7734627",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 156,
+                "zenodo_downloads": 14,
+                "updated_at": "2023-03-16T02:26:46.984512+00:00",
+                "created_at": "2023-03-15T22:56:25.327698+00:00"
+            }
+        },
+        {
+            "title": "Dissecting BFT Consensus: In Trusted Components we Trust!",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3587455",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7734495",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 286,
+                "zenodo_downloads": 37,
+                "updated_at": "2023-08-22T07:59:07.753463+00:00",
+                "created_at": "2023-03-14T18:15:41.805850+00:00"
+            }
+        },
+        {
+            "title": "Efficient and Safe I/O Operations for Intermittent Systems",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3587435",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7735158",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 91,
+                "zenodo_downloads": 24,
+                "updated_at": "2023-03-15T02:27:12.898532+00:00",
+                "created_at": "2023-03-15T00:13:20.716277+00:00"
+            }
+        },
+        {
+            "title": "Fail through the Cracks: Cross-System Interaction Failures in Modern Cloud Systems",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3587448",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7726172",
+            "award": "Gilles Muller Best Artifact Award",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 61,
+                "zenodo_downloads": 16,
+                "updated_at": "2023-03-13T02:26:38.175948+00:00",
+                "created_at": "2023-03-12T21:50:28.422448+00:00"
+            }
+        },
+        {
+            "title": "Nephele: Extending Virtualization Environments for Cloning Unikernel-based VMs",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3587454",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7732935",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 72,
+                "zenodo_downloads": 18,
+                "updated_at": "2023-03-15T02:27:11.440967+00:00",
+                "created_at": "2023-03-14T12:35:26.925392+00:00"
+            }
+        },
+        {
+            "title": "MariusGNN: Resource-Efficient Out-of-Core Training of Graph Neural Networks",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567501",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7114594",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 116,
+                "zenodo_downloads": 11,
+                "updated_at": "2022-09-27T02:26:19.771039+00:00",
+                "created_at": "2022-09-26T21:15:22.014460+00:00"
+            }
+        },
+        {
+            "title": "DiLOS: Do Not Trade Compatibility for Performance in Memory Disaggregation",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3567488",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7704577",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 49,
+                "zenodo_downloads": 6,
+                "updated_at": "2023-03-07T14:26:39.653999+00:00",
+                "created_at": "2023-03-07T11:21:54.186788+00:00"
+            }
+        },
+        {
+            "title": "LogGrep: Fast and Cheap Cloud Log Storage by Exploiting both Static and Runtime Patterns",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567484",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7709922",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 50,
+                "zenodo_downloads": 12,
+                "updated_at": "2023-03-09T02:26:46.526700+00:00",
+                "created_at": "2023-03-09T01:51:26.286777+00:00"
+            }
+        },
+        {
+            "title": "Viper: A Fast Snapshot Isolation Checker",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3567492",
+            "artifact_url": "https://doi.org/10.6084/m9.figshare.22223914.v1",
+            "artifact_url_exists": true,
+            "stats": {
+                "figshare_views": 140,
+                "figshare_downloads": 26,
+                "updated_at": "2023-03-07T01:42:39Z",
+                "created_at": "2023-03-07T01:42:38Z"
+            }
+        },
+        {
+            "title": "OLPart: Online Learning based Resource Partitioning for Colocating Multiple Latency-Critical Jobs on Commodity Computers",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3567490",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7726928",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 84,
+                "zenodo_downloads": 119,
+                "updated_at": "2024-07-12T12:17:22.174691+00:00",
+                "created_at": "2023-03-13T06:21:29.434559+00:00"
+            }
+        },
+        {
+            "title": "Hi-Speed DNN Training with Espresso: Unleashing the Full Potential of Gradient Compression with Near-Optimal Usage Strategies",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3567505",
+            "artifact_url": "https://doi.org/10.6084/m9.figshare.22233487.v1",
+            "artifact_url_exists": true,
+            "stats": {
+                "figshare_views": 82,
+                "figshare_downloads": 11,
+                "updated_at": "2023-06-02T15:22:08Z",
+                "created_at": "2023-03-08T16:32:16Z"
+            }
+        },
+        {
+            "title": "WAFL: Exposing Memory Ordering Bugs Efficiently with Active Delay Injection",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567507",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7710637",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 80,
+                "zenodo_downloads": 18,
+                "updated_at": "2023-03-10T02:26:53.048506+00:00",
+                "created_at": "2023-03-09T06:32:03.734306+00:00"
+            }
+        },
+        {
+            "title": "Fast and Efficient Model Serving Using Multi-GPUs with Direct-Host-Access",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3567508",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7703530",
+            "award": "Gilles Muller Best Artifact Award",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 79,
+                "zenodo_downloads": 7,
+                "updated_at": "2023-03-07T14:26:39.668452+00:00",
+                "created_at": "2023-03-07T07:11:34.170604+00:00"
+            }
+        },
+        {
+            "title": "Diablo: A Benchmark Suite for Blockchains",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567482",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7707312",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 134,
+                "zenodo_downloads": 189,
+                "updated_at": "2023-03-09T02:26:45.186193+00:00",
+                "created_at": "2023-03-08T07:23:47.771969+00:00"
+            }
+        },
+        {
+            "title": "Groundhog: Efficient Request Isolation in FaaS",
+            "badges": "available,functional,reproduced",
+            "paper_url": "https://doi.org/10.1145/3552326.3567503",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7703209",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 79,
+                "zenodo_downloads": 99,
+                "updated_at": "2023-03-07T22:51:35.470834+00:00",
+                "created_at": "2023-03-07T00:04:17.330478+00:00"
+            }
+        },
+        {
+            "title": "All-Flash Array Key-Value Cache for Large Objects",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567509",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7703583",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 138,
+                "zenodo_downloads": 7,
+                "updated_at": "2023-03-07T14:26:39.275474+00:00",
+                "created_at": "2023-03-07T05:59:35.828838+00:00"
+            }
+        },
+        {
+            "title": "REFL: Resource-Efficient Federated Learning",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567485",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7141105",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 196,
+                "zenodo_downloads": 17,
+                "updated_at": "2022-10-04T03:22:21.405231+00:00",
+                "created_at": "2022-10-04T00:31:03.290408+00:00"
+            }
+        },
+        {
+            "title": "With Great Freedom Comes Great Opportunity: Rethinking Resource Allocation for Serverless Functions",
+            "badges": "available,functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567506",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7143413",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 164,
+                "zenodo_downloads": 44,
+                "updated_at": "2022-10-04T14:26:21.086866+00:00",
+                "created_at": "2022-10-04T14:19:27.592169+00:00"
+            }
+        },
+        {
+            "title": "Integrating Non-Volatile Main Memory in a Deterministic Database",
+            "badges": "available",
+            "paper_url": "https://doi.org/10.1145/3552326.3567494",
+            "artifact_url": "https://doi.org/10.5281/zenodo.7706922",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 54,
+                "zenodo_downloads": 11,
+                "updated_at": "2023-03-08T02:26:41.296474+00:00",
+                "created_at": "2023-03-07T23:58:56.760804+00:00"
+            }
+        },
+        {
+            "title": "Accelerating Graph Mining Systems with Subgraph Reshaping",
+            "badges": "functional",
+            "paper_url": "https://doi.org/10.1145/3552326.3567489"
+        }
+    ],
+    "eurosys2024": [
+        {
+            "title": "Aceso: Efficient Parallel DNN Training through Iterative Bottleneck Alleviation",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10077042",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 123,
+                "zenodo_downloads": 7,
+                "updated_at": "2023-11-07T08:04:58.942451+00:00",
+                "created_at": "2023-11-07T08:04:58.672457+00:00"
+            }
+        },
+        {
+            "title": "Adaptable Runtime Monitoring for Intermittent Systems",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10792132",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 25,
+                "zenodo_downloads": 8,
+                "updated_at": "2024-03-07T07:54:10.628046+00:00",
+                "created_at": "2024-03-07T07:50:39.635289+00:00"
+            }
+        },
+        {
+            "title": "Atlas: Hybrid Cloud Migration Advisor for Interactive Microservices",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10080460",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 53,
+                "zenodo_downloads": 7,
+                "updated_at": "2023-11-07T19:28:54.823646+00:00",
+                "created_at": "2023-11-07T19:28:54.676084+00:00"
+            }
+        },
+        {
+            "title": "CDMPP: A Device-Model Agnostic Framework for Latency Prediction of Tensor Programs",
+            "artifact_url": "http://doi.org/10.6084/m9.figshare.24156084",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "figshare_views": 362,
+                "figshare_downloads": 48,
+                "updated_at": "2024-03-16T05:01:29Z",
+                "created_at": "2024-03-16T05:01:28Z"
+            }
+        },
+        {
+            "title": "Characterization and Reclamation of Frozen Garbage in Managed FaaS Workloads",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10103366",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 48,
+                "zenodo_downloads": 5,
+                "updated_at": "2023-11-10T14:10:44.822411+00:00",
+                "created_at": "2023-11-10T14:10:44.699077+00:00"
+            }
+        },
+        {
+            "title": "Concealing Compression-accelerated I/O for HPC Applications through In Situ Task Scheduling",
+            "artifact_url": "http://doi.org/10.5281/zenodo.8394044",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 75,
+                "zenodo_downloads": 4,
+                "updated_at": "2023-09-30T02:27:08.092437+00:00",
+                "created_at": "2023-09-30T02:19:26.816033+00:00"
+            }
+        },
+        {
+            "title": "CSAL: the Next-Gen Local Disks for the Cloud",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10086260",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 98,
+                "zenodo_downloads": 7,
+                "updated_at": "2023-11-08T22:40:54.923952+00:00",
+                "created_at": "2023-11-08T22:40:54.753435+00:00"
+            }
+        },
+        {
+            "title": "Dordis: Efficient Federated Learning with Dropout-Resilient Differential Privacy",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10023703",
+            "badges": "available",
+            "artifact_url_exists": false
+        },
+        {
+            "title": "Draconis: Network-Accelerated Scheduling for Micro-Scale Workloads",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10688914",
+            "badges": "available",
+            "artifact_url_exists": false
+        },
+        {
+            "title": "DynaPipe: Optimizing Multi-task Training through Dynamic Pipelines",
+            "artifact_url": "http://doi.org/10.5281/zenodo.8413925",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 127,
+                "zenodo_downloads": 116,
+                "updated_at": "2024-07-10T23:01:11.238914+00:00",
+                "created_at": "2023-11-09T16:15:29.803905+00:00"
+            }
+        },
+        {
+            "title": "Effective Bug Detection with Unused Definitions",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10081116",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 33,
+                "zenodo_downloads": 5,
+                "updated_at": "2023-11-08T02:18:33.211311+00:00",
+                "created_at": "2023-11-08T02:18:33.084208+00:00"
+            }
+        },
+        {
+            "title": "Efficient Auditing of Event-driven Web Applications",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10790870",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 80,
+                "zenodo_downloads": 6,
+                "updated_at": "2024-03-07T00:24:55.766068+00:00",
+                "created_at": "2024-03-07T00:24:55.481371+00:00"
+            }
+        },
+        {
+            "title": "Enoki: High Velocity Linux Kernel Scheduler Development",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10076583",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 20,
+                "zenodo_downloads": 3,
+                "updated_at": "2023-11-06T20:44:54.993044+00:00",
+                "created_at": "2023-11-06T20:44:54.806308+00:00"
+            }
+        },
+        {
+            "title": "FLOAT: Federated Learning Optimizations with Automated Tuning",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10791491",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 28,
+                "zenodo_downloads": 8,
+                "updated_at": "2024-03-07T05:21:44.568052+00:00",
+                "created_at": "2024-03-07T05:21:44.378021+00:00"
+            }
+        },
+        {
+            "title": "FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10783932",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 28,
+                "zenodo_downloads": 4,
+                "updated_at": "2024-03-06T02:39:29.926800+00:00",
+                "created_at": "2024-03-06T02:39:29.692738+00:00"
+            }
+        },
+        {
+            "title": "GMorph: Accelerating Multi-DNN Inference via Model Fusion",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10783786",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 55,
+                "zenodo_downloads": 6,
+                "updated_at": "2024-03-06T00:03:50.815329+00:00",
+                "created_at": "2024-03-06T00:03:50.445314+00:00"
+            }
+        },
+        {
+            "title": "HAP: SPMD DNN Training on Heterogeneous GPU Clusters with Automated Program Synthesis",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10089643",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 116,
+                "zenodo_downloads": 10,
+                "updated_at": "2023-11-09T09:46:06.956663+00:00",
+                "created_at": "2023-11-09T09:46:06.774890+00:00"
+            }
+        },
+        {
+            "title": "HD-IOV: SW-HW Co-designed I/O Virtualization with Scalability and Flexibility for Hyper-Density Cloud",
+            "artifact_url": "http://doi.org/10.5281/zenodo.8361554",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 156,
+                "zenodo_downloads": 7,
+                "updated_at": "2023-11-10T04:53:48.584782+00:00",
+                "created_at": "2023-11-10T04:53:48.382072+00:00"
+            }
+        },
+        {
+            "title": "Improving GPU Energy Efficiency through an Application-transparent Frequency Scaling Policy with Performance Assurance",
+            "artifact_url": "http://doi.org/10.6084/m9.figshare.24523315.v1",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "figshare_views": 73,
+                "figshare_downloads": 27,
+                "updated_at": "2023-11-08T08:07:04Z",
+                "created_at": "2023-11-08T08:07:04Z"
+            }
+        },
+        {
+            "title": "Minuet: Accelerating 3D Sparse Convolutions on GPUs",
+            "artifact_url": "http://doi.org/10.5281/zenodo.8393982",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 90,
+                "zenodo_downloads": 6,
+                "updated_at": "2023-09-30T02:27:06.421520+00:00",
+                "created_at": "2023-09-30T01:33:24.980281+00:00"
+            }
+        },
+        {
+            "title": "Model Selection for Latency-Critical Inference Serving",
+            "artifact_url": "http://doi.org/10.6084/m9.figshare.22721161.v2",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "figshare_views": 353,
+                "figshare_downloads": 43,
+                "updated_at": "2023-05-10T21:28:49Z",
+                "created_at": "2023-05-10T21:28:49Z"
+            }
+        },
+        {
+            "title": "On the Limitations of Carbon-Aware Temporal and Spatial Workload Shifting in the Cloud",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10790855",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 169,
+                "zenodo_downloads": 44,
+                "updated_at": "2024-03-06T23:43:25.421732+00:00",
+                "created_at": "2024-03-06T23:43:25.157779+00:00"
+            }
+        },
+        {
+            "title": "Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10084464",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 60,
+                "zenodo_downloads": 5,
+                "updated_at": "2023-11-08T22:06:17.317012+00:00",
+                "created_at": "2023-11-08T22:06:17.123743+00:00"
+            }
+        },
+        {
+            "title": "Pronghorn: Effective Checkpoint Orchestration for Serverless Hot-Starts",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10089094",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 59,
+                "zenodo_downloads": 5,
+                "updated_at": "2023-11-09T07:53:22.794618+00:00",
+                "created_at": "2023-11-09T07:53:22.494356+00:00"
+            }
+        },
+        {
+            "title": "Puddles: Application-Independent Recovery and Location-Independent Data for Persistent Memory",
+            "artifact_url": "http://doi.org/10.5281/zenodo.8400339",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 95,
+                "zenodo_downloads": 30,
+                "updated_at": "2023-10-03T02:27:01.209412+00:00",
+                "created_at": "2023-10-02T17:41:27.806938+00:00"
+            }
+        },
+        {
+            "title": "Serialization/Deserialization-free State Transfer in Serverless Workflows with RDMA-based Remote Memory Map",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10078917",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 66,
+                "zenodo_downloads": 5,
+                "updated_at": "2023-11-07T14:46:50.096918+00:00",
+                "created_at": "2023-11-07T14:46:49.913934+00:00"
+            }
+        },
+        {
+            "title": "SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10076707",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 21,
+                "zenodo_downloads": 1,
+                "updated_at": "2023-11-06T22:25:03.747571+00:00",
+                "created_at": "2023-11-06T22:17:29.414370+00:00"
+            }
+        },
+        {
+            "title": "TraceUpscaler: Upscaling Traces to Evaluate Systems at High Load",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10042017",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 155,
+                "zenodo_downloads": 97,
+                "updated_at": "2024-07-10T22:46:09.235725+00:00",
+                "created_at": "2023-11-09T23:16:19.967366+00:00"
+            }
+        },
+        {
+            "title": "Transparent Multicore Scaling of Single-Threaded Network Functions",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10087198",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 114,
+                "zenodo_downloads": 8,
+                "updated_at": "2023-11-09T04:05:25.346606+00:00",
+                "created_at": "2023-11-09T04:05:25.200475+00:00"
+            }
+        },
+        {
+            "title": "TTLs Matter: Efficient Cache Sizing with TTL-Aware Miss Ratio Curves and Working Set Sizes",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10783873",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 34,
+                "zenodo_downloads": 4,
+                "updated_at": "2024-03-06T01:32:14.445171+00:00",
+                "created_at": "2024-03-06T01:32:14.228513+00:00"
+            }
+        },
+        {
+            "title": "Unison: A Parallel-Efficient and User-Transparent Network Simulation Kernel",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10077300",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 199,
+                "zenodo_downloads": 13,
+                "updated_at": "2023-11-07T06:42:01.281348+00:00",
+                "created_at": "2023-11-07T06:42:00.870968+00:00"
+            }
+        },
+        {
+            "title": "WiseGraph: Optimizing GNN with Joint Workload Partition of Graph and Operations",
+            "artifact_url": "http://doi.org/10.5281/zenodo.10791372",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 20,
+                "zenodo_downloads": 4,
+                "updated_at": "2024-03-07T03:49:06.708971+00:00",
+                "created_at": "2024-03-07T03:49:06.515544+00:00"
+            }
+        }
+    ],
+    "eurosys2025": [
+        {
+            "title": "JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13827000",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 32,
+                "zenodo_downloads": 2,
+                "updated_at": "2024-09-23T05:27:48.707685+00:00",
+                "created_at": "2024-09-23T05:27:48.579958+00:00"
+            }
+        },
+        {
+            "title": "Efficiently Packing Privacy Budget with DPack",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13731043",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 24,
+                "zenodo_downloads": 4,
+                "updated_at": "2024-09-07T23:11:36.343073+00:00",
+                "created_at": "2024-09-07T23:11:36.143271+00:00"
+            }
+        },
+        {
+            "title": "Understanding the Linux Kernel, Visually",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13710732",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 84,
+                "zenodo_downloads": 9,
+                "updated_at": "2024-09-06T10:59:43.819961+00:00",
+                "created_at": "2024-09-06T10:59:43.611098+00:00"
+            }
+        },
+        {
+            "title": "RAKIS: Secure Fast I/O Primitives Across Trust Boundaries on Intel SGX",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13800029",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 21,
+                "zenodo_downloads": 2,
+                "updated_at": "2024-09-19T21:39:39.176585+00:00",
+                "created_at": "2024-09-19T21:39:39.010885+00:00"
+            }
+        },
+        {
+            "title": "Collaborative Text Editing with Eg-walker: Better, Faster, Smaller",
+            "artifact_url": "https://zenodo.org/records/13823409",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 166,
+                "zenodo_downloads": 31,
+                "updated_at": "2024-09-21T15:36:26.655108+00:00",
+                "created_at": "2024-09-21T15:36:26.416834+00:00"
+            }
+        },
+        {
+            "title": "Flex: Fast, Accurate DNN Inference on Low-Cost Edges Using Heterogeneous Accelerator Execution",
+            "artifact_url": "https://github.com/Tanmoy058/Elastically-Scheduling-Multiple-DNN-Inference-Jobs-on-an-Edge-Device-for-High-Efficiency-and-Accurac/blob/main/README.md",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2024-09-02T10:11:22Z",
+                "created_at": "2022-08-01T21:10:03Z",
+                "pushed_at": "2024-09-02T10:11:18Z",
+                "name": "Tanmoy058/Elastically-Scheduling-Multiple-DNN-Inference-Jobs-on-an-Edge-Device-for-High-Efficiency-and-Accurac"
+            }
+        },
+        {
+            "title": "Ladon: High-Performance Multi-BFT Consensus via Dynamic Global Ordering",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13714937",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 15,
+                "zenodo_downloads": 1,
+                "updated_at": "2024-09-06T18:41:37.869317+00:00",
+                "created_at": "2024-09-06T18:41:37.741966+00:00"
+            }
+        },
+        {
+            "title": "Multi-Grained Specifications for Distributed System Model Checking and Verification",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13738672",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 101,
+                "zenodo_downloads": 12,
+                "updated_at": "2024-09-10T03:25:54.575981+00:00",
+                "created_at": "2024-09-10T03:12:22.056970+00:00"
+            }
+        },
+        {
+            "title": "Pegasus: Transparent and Unified Kernel-Bypass Networking for Fast Local and Remote Communication",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13714712",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 28,
+                "zenodo_downloads": 14,
+                "updated_at": "2024-09-06T18:35:59.311015+00:00",
+                "created_at": "2024-09-06T18:35:59.150026+00:00"
+            }
+        },
+        {
+            "title": "ParallelEVM: Operation-Level Concurrent Transaction Execution for EVM-Compatible Blockchains",
+            "badges": "functional,reproduced"
+        },
+        {
+            "title": "Efeu: generating efficient, verified, hybrid hardware/software drivers for I2C devices",
+            "artifact_url": "https://zenodo.org/doi/10.5281/zenodo.13734520",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 65,
+                "zenodo_downloads": 13,
+                "updated_at": "2024-09-20T16:52:38.409380+00:00",
+                "created_at": "2024-09-20T16:46:37.363923+00:00"
+            }
+        },
+        {
+            "title": "CAPSys: Contention-aware task placement for data stream processing",
+            "artifact_url": "https://zenodo.org/doi/10.5281/zenodo.13717642",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true
+        },
+        {
+            "title": "Hey Hey, My My, Skewness Is Here to Stay: Challenges and Opportunities in Cloud Block Store Traffic",
+            "artifact_url": "https://github.com/Nan-Ge/eurosys25_ae",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2024-09-03T08:28:29Z",
+                "created_at": "2024-08-29T11:58:17Z",
+                "pushed_at": "2024-09-03T08:28:25Z",
+                "name": "Nan-Ge/eurosys25_ae"
+            }
+        },
+        {
+            "title": "Introspective Congestion Control for Consistent High Performance",
+            "artifact_url": "https://doi.org/10.5281/zenodo.13712326",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 58,
+                "zenodo_downloads": 11,
+                "updated_at": "2024-09-06T14:32:14.206145+00:00",
+                "created_at": "2024-09-06T14:32:14.061578+00:00"
+            }
+        },
+        {
+            "title": "You Only Prefill Once: Combining Cached Knowledge for Large Language Model Serving with CacheBlend",
+            "artifact_url": "https://github.com/YaoJiayi/CacheBlend.git",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 7,
+                "github_stars": 82,
+                "updated_at": "2025-03-19T06:17:58Z",
+                "created_at": "2024-05-26T05:08:53Z",
+                "pushed_at": "2024-12-31T04:28:00Z",
+                "name": "YaoJiayi/CacheBlend"
+            }
+        },
+        {
+            "title": "DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs",
+            "artifact_url": "https://github.com/eth-easl/deltazip-ae",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-21T00:47:27Z",
+                "created_at": "2025-02-04T15:38:25Z",
+                "pushed_at": "2025-02-21T00:47:23Z",
+                "name": "eth-easl/deltazip-ae"
+            }
+        },
+        {
+            "title": "Revealing the Unstable Foundations of eBPF-Based Kernel Extensions",
+            "artifact_url": "https://github.com/ShawnZhong/DepSurf",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 2,
+                "updated_at": "2025-03-19T06:44:34Z",
+                "created_at": "2024-01-24T12:15:45Z",
+                "pushed_at": "2025-03-19T06:44:31Z",
+                "name": "ShawnZhong/DepSurf"
+            }
+        },
+        {
+            "title": "SeBS-Flow: Benchmarking Serverless Cloud Function Workflows",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14809924",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 55,
+                "zenodo_downloads": 17,
+                "updated_at": "2025-02-21T17:03:37.346278+00:00",
+                "created_at": "2025-02-21T17:03:37.191876+00:00"
+            }
+        },
+        {
+            "title": "MEPipe: Democratizing LLM Training with Memory-Efficient Slice-Level Pipeline Scheduling on Cost-Effective Accelerators",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14829560",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 127,
+                "zenodo_downloads": 82,
+                "updated_at": "2025-02-28T06:53:47.562841+00:00",
+                "created_at": "2025-02-28T06:53:47.436742+00:00"
+            }
+        },
+        {
+            "title": "Samoyeds: Accelerating MoE Models with Structured Sparsity Leveraging Sparse Tensor Cores",
+            "artifact_url": "https://github.com/guqiqi/Samoyeds",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-28T07:56:12Z",
+                "created_at": "2025-02-18T01:39:53Z",
+                "pushed_at": "2025-02-28T07:56:09Z",
+                "name": "guqiqi/Samoyeds"
+            }
+        },
+        {
+            "title": "Eva: Cost-Efficient Cloud-Based Cluster Scheduling",
+            "artifact_url": "https://github.com/uw-mad-dash/Eva",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-16T18:41:13Z",
+                "created_at": "2025-02-06T23:22:00Z",
+                "pushed_at": "2025-02-17T04:19:33Z",
+                "name": "uw-mad-dash/Eva"
+            }
+        },
+        {
+            "title": "TUNA: Tuning Unstable and Noisy Cloud Applications",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14872390",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 6,
+                "zenodo_downloads": 0,
+                "updated_at": "2025-02-14T17:04:39.023924+00:00",
+                "created_at": "2025-02-14T17:04:38.866477+00:00"
+            }
+        },
+        {
+            "title": "SpotHedge: Serving AI Models on Spot Instances",
+            "artifact_url": "https://github.com/MaoZiming/spothedge_ae",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 5,
+                "updated_at": "2025-02-27T18:45:03Z",
+                "created_at": "2025-02-07T00:37:41Z",
+                "pushed_at": "2025-02-27T18:45:00Z",
+                "name": "MaoZiming/spothedge_ae"
+            }
+        },
+        {
+            "title": "Jupiter: Pushing Speed and Scalability Limitations for Subgraph Matching on Multi-GPUs",
+            "artifact_url": "https://github.com/AnySparse/Jupiter",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-09T06:28:15Z",
+                "created_at": "2025-01-27T03:38:00Z",
+                "pushed_at": "2025-02-09T06:28:12Z",
+                "name": "AnySparse/Jupiter"
+            }
+        },
+        {
+            "title": "Garbage Collection Does Not Only Collect Garbage: Piggybacking-Style Defragmentation for Deduplicated Backup Storage",
+            "artifact_url": "https://github.com/Borelset/GCCDF",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-07T10:52:46Z",
+                "created_at": "2025-02-06T13:16:16Z",
+                "pushed_at": "2025-02-25T17:38:15Z",
+                "name": "Borelset/GCCDF"
+            }
+        },
+        {
+            "title": "Occamy: A Preemptive Buffer Management for On-chip Shared-memory Switches",
+            "artifact_url": "https://zenodo.org/records/14871138",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 12,
+                "zenodo_downloads": 0,
+                "updated_at": "2025-02-14T13:30:57.009513+00:00",
+                "created_at": "2025-02-14T13:30:56.805948+00:00"
+            }
+        },
+        {
+            "title": "LOFT: A Lock-free and Adaptive Learned Index with High Scalability for Dynamic Workloads",
+            "artifact_url": "https://github.com/yuxuanMo/LOFT/tree/main",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 1,
+                "updated_at": "2025-03-18T08:27:01Z",
+                "created_at": "2025-02-05T09:05:07Z",
+                "pushed_at": "2025-02-20T08:41:11Z",
+                "name": "yuxuanMo/LOFT"
+            }
+        },
+        {
+            "title": "Comprehensive Deadlock Prevention for GPU Collective Communication",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14871978",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 26,
+                "zenodo_downloads": 6,
+                "updated_at": "2025-02-14T15:46:44.189969+00:00",
+                "created_at": "2025-02-14T15:46:43.926761+00:00"
+            }
+        },
+        {
+            "title": "HyperAlloc: Efficient VM Memory De/Inflation via Hypervisor-Shared Page-Frame Allocators",
+            "artifact_url": "https://github.com/luhsra/hyperalloc-bench/pkgs/container/hyperalloc_ae",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-03-18T15:55:17Z",
+                "created_at": "2025-01-30T11:31:09Z",
+                "pushed_at": "2025-03-18T15:55:12Z",
+                "name": "luhsra/hyperalloc-bench"
+            }
+        },
+        {
+            "title": "Chrono: Meticulous Hotness Measurement and Flexible Page Migration for Memory Tiering",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14875828",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 8,
+                "zenodo_downloads": 0,
+                "updated_at": "2025-02-15T14:32:15.449420+00:00",
+                "created_at": "2025-02-15T14:32:15.248686+00:00"
+            }
+        },
+        {
+            "title": "AlloyStack: A Library Operating System for Serverless Workflow Applications",
+            "artifact_url": "https://github.com/tanksys/AlloyStack",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 8,
+                "github_stars": 4,
+                "updated_at": "2025-03-03T08:38:28Z",
+                "created_at": "2023-03-17T10:22:48Z",
+                "pushed_at": "2025-03-10T04:00:08Z",
+                "name": "tanksys/AlloyStack"
+            }
+        },
+        {
+            "title": "HawkSet: Automatic, Application-Agnostic, and Efficient Concurrent PM Bug Detection",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14917473",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 4,
+                "zenodo_downloads": 0,
+                "updated_at": "2025-02-24T12:46:19.675353+00:00",
+                "created_at": "2025-02-24T12:46:19.451953+00:00"
+            }
+        },
+        {
+            "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization",
+            "artifact_url": "https://github.com/dazz993/mist",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 1,
+                "updated_at": "2025-02-15T01:59:06Z",
+                "created_at": "2025-02-06T19:33:27Z",
+                "pushed_at": "2025-02-07T18:58:48Z",
+                "name": "Dazz993/Mist"
+            }
+        },
+        {
+            "title": "Erebor: A Drop-In Sandbox Solution for Private Data Processing in Untrusted Confidential Virtual Machines",
+            "artifact_url": "https://github.com/ASTERISC-Release/Erebor",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 5,
+                "updated_at": "2025-02-26T08:02:31Z",
+                "created_at": "2025-01-31T02:41:08Z",
+                "pushed_at": "2025-02-17T15:30:35Z",
+                "name": "ASTERISC-Release/Erebor"
+            }
+        },
+        {
+            "title": "Empowering WebAssembly with Thin Kernel Interfaces",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14829424",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 50,
+                "zenodo_downloads": 20,
+                "updated_at": "2025-02-07T02:42:55.401494+00:00",
+                "created_at": "2025-02-07T02:42:12.830885+00:00"
+            }
+        },
+        {
+            "title": "A Hardware-Software Co-Design for Efficient Secure Containers",
+            "artifact_url": "https://github.com/shijc-sjtu/cki-artifact",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-26T15:20:50Z",
+                "created_at": "2025-02-05T17:23:13Z",
+                "pushed_at": "2025-02-26T15:20:47Z",
+                "name": "shijc-sjtu/cki-artifact"
+            }
+        },
+        {
+            "title": "Achilles: Efficient TEE-Assisted BFT Consensus via Rollback Resilient Recovery",
+            "artifact_url": "https://doi.org/10.5281/zenodo.14830621",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "zenodo_views": 3,
+                "zenodo_downloads": 4,
+                "updated_at": "2025-02-07T07:49:53.754002+00:00",
+                "created_at": "2025-02-07T07:49:53.561971+00:00"
+            }
+        },
+        {
+            "title": "Impeller: Stream Processing on Shared Logs",
+            "artifact_url": "https://github.com/ut-osa/impeller-artifact",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-03-02T02:16:01Z",
+                "created_at": "2025-02-04T17:28:04Z",
+                "pushed_at": "2025-03-02T02:15:57Z",
+                "name": "ut-osa/impeller-artifact"
+            }
+        },
+        {
+            "title": "Solid State Drive Targeted Memory-Efficient Indexing for Universal I/O Patterns and Fragmentation Degrees",
+            "artifact_url": "https://github.com/dgist-datalab/AppL",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-12T09:25:20Z",
+                "created_at": "2025-02-03T09:55:09Z",
+                "pushed_at": "2025-02-12T09:25:17Z",
+                "name": "dgist-datalab/AppL"
+            }
+        },
+        {
+            "title": "Overcoming the Last Mile between Log-Structured File Systems and Persistent Memory via Scatter Logging",
+            "artifact_url": "https://github.com/fg-sn2003/slotfs-eurosys",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 1,
+                "github_stars": 0,
+                "updated_at": "2025-02-21T02:58:50Z",
+                "created_at": "2025-02-07T07:32:03Z",
+                "pushed_at": "2025-03-20T07:27:35Z",
+                "name": "fg-sn2003/slotfs-eurosys"
+            }
+        },
+        {
+            "title": "SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs",
+            "artifact_url": "https://github.com/xxyux/SpInfer",
+            "badges": "available,functional,reproduced",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 2,
+                "github_stars": 9,
+                "updated_at": "2025-03-01T05:15:53Z",
+                "created_at": "2025-02-01T01:10:01Z",
+                "pushed_at": "2025-03-01T05:15:48Z",
+                "name": "xxyux/SpInfer"
+            }
+        },
+        {
+            "title": "Daredevil: Rescue Your Flash Storage from Inflexible Kernel Storage Stack",
+            "artifact_url": "https://github.com/HKU-System-Security-Lab/Daredevil",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-18T10:13:23Z",
+                "created_at": "2024-12-29T10:08:20Z",
+                "pushed_at": "2025-02-18T10:13:20Z",
+                "name": "HKU-System-Security-Lab/Daredevil"
+            }
+        },
+        {
+            "title": "Heimdall: Optimizing Storage I/O Admission with Extensive Machine Learning Pipeline",
+            "artifact_url": "https://github.com/ucare-uchicago/Heimdall",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-14T17:33:46Z",
+                "created_at": "2025-01-31T12:55:35Z",
+                "pushed_at": "2025-02-14T17:33:41Z",
+                "name": "ucare-uchicago/Heimdall"
+            }
+        },
+        {
+            "title": "CRAVE: Analyzing Cross-Resource Interaction to Improve Energy Efficiency in Systems-on-Chip",
+            "artifact_url": "https://github.com/dipayan2/CRAVE_Artifact_EuroSys",
+            "badges": "available",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 0,
+                "github_stars": 0,
+                "updated_at": "2025-02-07T03:52:22Z",
+                "created_at": "2025-02-05T18:40:25Z",
+                "pushed_at": "2025-02-07T03:52:18Z",
+                "name": "dipayan2/CRAVE_Artifact_EuroSys"
+            }
+        },
+        {
+            "title": "NeuStream: Bridging Deep Learning Serving and Stream Processing",
+            "artifact_url": "https://github.com/Fjallraven-hc/NeuStream-AE",
+            "badges": "available,functional",
+            "artifact_url_exists": true,
+            "stats": {
+                "github_forks": 1,
+                "github_stars": 0,
+                "updated_at": "2025-02-24T13:55:53Z",
+                "created_at": "2025-02-07T10:06:40Z",
+                "pushed_at": "2025-02-24T13:55:45Z",
+                "name": "Fjallraven-hc/NeuStream-AE"
+            }
+        }
+    ]
+}
