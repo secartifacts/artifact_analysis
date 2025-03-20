@@ -81,21 +81,16 @@ def get_all_artifact_stats(results, url_keys):
                 if url_key+'_exists' in artifact and artifact[url_key+'_exists']:
                     if 'zenodo' in artifact[url_key]:
                         stats = zenodo_stats(artifact[url_key])
-                        if stats:
-                            artifact['stats'] = stats
-
                     elif 'figshare' in artifact[url_key]:
                         stats = figshare_stats(artifact[url_key])
-                        if stats:
-                            artifact['stats'] = stats
-
                     elif 'github' in artifact[url_key]:
                         stats = github_stats(artifact[url_key])
-                        if stats:
-                            artifact['stats'] = stats
-
-                    else:
+                    else: # needed since stats doesn't exist otherwise
                         print(f'No stats for {artifact[url_key]} at {name} titled {artifact["title"]}')
+                        continue
+
+                    if stats:
+                        artifact['stats'] = {**stats, **artifact.get('stats', {})}
                 else:
                     print(f'{url_key} does not exist for {artifact["title"]} at {name}')
 

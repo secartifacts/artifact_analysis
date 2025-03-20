@@ -1,4 +1,5 @@
 import argparse
+import json
 import matplotlib.pyplot as plt
 import os
 from sys_sec_committee_scrape import get_committees
@@ -78,7 +79,10 @@ def aec_badges_per_paper():
     plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1])+1, 1))
     badge_acceptance_rates.savefig('figures/eurosys_badge_percent_paper.pdf', bbox_inches='tight')
 
-def aec_country():
+def extract_aec_country():
+    if os.path.exists('cache/aec_by_country.json'):
+        with open('cache/aec_by_country.json', 'r') as f:
+            return json.load(f)
     # committee location
     eurosys_aec = get_committees('eurosys20', 'sys')
     aec_by_country, failed = classify_aec_by_country(eurosys_aec)
@@ -92,6 +96,14 @@ def aec_country():
 
     sorted_countries = sorted(countries.items(), key=lambda x: x[1], reverse=True)
 
+    with open('cache/aec_by_country.json', 'w') as f:
+        json.dump(sorted_countries, f, indent=4)
+
+    return sorted_countries, aec_by_country
+
+def aec_country():
+    sorted_countries, aec_by_country = extract_aec_country()
+
     aec_by_country_f = plt.figure(5)
     plt.bar([x[0] for x in sorted_countries[:10]], [x[1] for x in sorted_countries[:10]])
     plt.xticks(rotation=45, ha='right')
@@ -101,6 +113,8 @@ def aec_country():
     aec_by_country_f.savefig('figures/eurosys_aec_by_country.pdf', bbox_inches='tight')
 
 def aec_country_by_year():
+    sorted_countries, aec_by_country = extract_aec_country()
+
     # committee location by year for top 15
     aec_by_country_year = {}
     for top_country, sum in sorted_countries[:10]:
@@ -120,50 +134,102 @@ def aec_country_by_year():
     plt.legend(loc='upper right')
     aec_by_country_f.savefig(f'figures/eurosys_aec_by_country.pdf', bbox_inches='tight')
 
-def cdf_artifact_stats():
+def get_artifact_stats():
     # cdf for stars/forks/view/downloads of artifacts
-    url_keys = ['repository_url', 'artifact_url']
-    ae_results = get_ae_results('eurosys202[2-9]', 'sys')
-    ae_results, _, _ = check_artifact_exists(ae_results, url_keys)
-    ae_results = get_all_artifact_stats(ae_results, url_keys)
-    stars = {}
-    forks = {}
-    views = {}
-    downloads = {}
-    for year, ae_results in ae_results.items():
-        stars[year] = []
-        forks[year] = []
-        views[year] = []
-        downloads[year] = []
-        for ae_result in ae_results:
-            if 'stats' in ae_result:
-                if 'stars' in ae_result['stats']:
-                    stars[year].append(ae_result['stats']['stars'])
-                if 'forks' in ae_result['stats']:
-                    forks[year].append(ae_result['stats']['forks'])
-                if 'views' in ae_result['stats']:
-                    views[year].append(ae_result['stats']['views'])
-                if 'downloads' in ae_result['stats']:
-                    downloads[year].append(ae_result['stats']['downloads'])
+    if os.path.exists('cache/ae_stats.json'):
+        with open('cache/ae_stats.json', 'r') as f:
+            ae_results = json.load(f)
+    else:
+        url_keys = ['repository_url', 'artifact_url']
+        ae_results = get_ae_results('eurosys202[2-5]', 'sys')
+        ae_results, _, _ = check_artifact_exists(ae_results, url_keys)
+        ae_results = get_all_artifact_stats(ae_results, url_keys)
+        with open('cache/ae_stats.json', 'w') as f:
+            json.dump(ae_results, f, indent=4)
 
-        # remove empty years
-        if len(stars[year]) == 0:
-            stars.remove(year)
-        if len(forks[year]) == 0:
-            forks.remove(year)
-        if len(views[year]) == 0:
-            views.remove(year)
-        if len(downloads[year]) == 0:
-            downloads.remove(year)
+    if os.path.exists('cache/stars.json') and os.path.exists('cache/forks.json') and os.path.exists('cache/views.json') and os.path.exists('cache/downloads.json'):
+        stars = json.load(open('cache/stars.json'))
+        forks = json.load(open('cache/forks.json'))
+        views = json.load(open('cache/views.json'))
+        downloads = json.load(open('cache/downloads.json'))
+    else:
+        stars = {}
+        forks = {}
+        views = {}
+        downloads = {}
 
-    print(stars)
-    print(forks)
-    print(views)
-    print(downloads)
+        for year, per_year_ae_results in ae_results.items():
+            stars[year] = []
+            forks[year] = []
+            views[year] = []
+            downloads[year] = []
+           # print(year)
+           # print(per_year_ae_results)
+            for ae_result in per_year_ae_results:
+                if 'stats' in ae_result:
+                    if 'github_stars' in ae_result['stats']:
+                        stars[year].append(ae_result['stats']['github_stars'])
+                    if 'github_forks' in ae_result['stats']:
+                        forks[year].append(ae_result['stats']['github_forks'])
+                    if 'zenodo_views' in ae_result['stats']:
+                        views[year].append(ae_result['stats']['zenodo_views'])
+                    if 'zenodo_downloads' in ae_result['stats']:
+                        downloads[year].append(ae_result['stats']['zenodo_downloads'])
+                    if 'figshare_views' in ae_result['stats']:
+                        views[year].append(ae_result['stats']['figshare_views'])
+                    if 'figshare_downloads' in ae_result['stats']:
+                        downloads[year].append(ae_result['stats']['figshare_downloads'])
+
+            # remove empty years
+            if len(stars[year]) == 0:
+                del stars[year]
+            if len(forks[year]) == 0:
+                del forks[year]
+            if len(views[year]) == 0:
+                del views[year]
+            if len(downloads[year]) == 0:
+                del downloads[year]
+
+        with open('cache/stars.json', 'w') as s, \
+            open('cache/forks.json', 'w') as f, \
+            open('cache/views.json', 'w') as v,\
+            open('cache/downloads.json', 'w') as d:
+            json.dump(stars, s)
+            json.dump(forks, f)
+            json.dump(views, v)
+            json.dump(downloads, d)
+
+    return stars, forks, views, downloads
+
+def plot_cdf_artifact_stat(stats, metrics):
+    f = plt.figure()
+    ax  = f.add_subplot()
+    for metric in metrics:
+        for year, values in stats[metric].items():
+            ax.ecdf(values, label=f'{metric} {year[7:]}', linewidth=1)
+    plt.legend(loc='lower right')
+    plt.xlabel(f'Number of {"/".join(metrics)} of artifacts')
+    plt.ylabel('CDF')
+    f.savefig(f'figures/eurosys_cdf_artifact_{"_".join(metrics)}.pdf', bbox_inches='tight')
+
+def cdf_artifact_stats():
+    stars, forks, views, downloads = get_artifact_stats()
+    stats = {'stars': stars, 'forks': forks, 'views': views, 'downloads': downloads}
+
+    # cdf for stars/forks/view/downloads of artifacts
+    plot_cdf_artifact_stat(stats, ['stars', 'forks', 'views', 'downloads'])
+
+    plot_cdf_artifact_stat(stats, ['stars'])
+    plot_cdf_artifact_stat(stats, ['forks'])
+    plot_cdf_artifact_stat(stats, ['stars', 'forks'])
+    plot_cdf_artifact_stat(stats, ['views'])
+    plot_cdf_artifact_stat(stats, ['downloads'])
+
 
 def main():
     # Create 'figures' folder if it doesn't exist
     os.makedirs('figures', exist_ok=True)
+    os.makedirs('cache', exist_ok=True)
 
     parser = argparse.ArgumentParser(description='Plotting figures for EuroSys')
     parser.add_argument('--plot_all', action='store_true', help='Plot all figures')
@@ -174,6 +240,7 @@ def main():
     parser.add_argument('--plot_aec_country', action='store_true', help='Plot committee location')
     parser.add_argument('--plot_aec_country_by_year', action='store_true', help='Plot committee location by year')
     parser.add_argument('--plot_cdf_artifact_stats', action='store_true', help='Plot cdf for stars/forks/view/downloads of artifacts')
+    parser.add_argument('--delete_cache', action='store_true', help='Delete json cache files')
     args = parser.parse_args()
 
     if args.plot_number_papers_artifacts or args.plot_all:
@@ -190,6 +257,12 @@ def main():
         aec_country_by_year()
     if args.plot_cdf_artifact_stats or args.plot_all:
         cdf_artifact_stats()
+    if args.delete_cache:
+        os.remove('cache/aec_by_country.json')
+        os.remove('cache/stars.json')
+        os.remove('cache/forks.json')
+        os.remove('cache/views.json')
+        os.remove('cache/downloads.json')
 
 
 if __name__ == "__main__":
