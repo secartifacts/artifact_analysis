@@ -15,7 +15,7 @@ def zenodo_stats(url):
     response = requests.get(f'https://zenodo.org/api/records/{rec}')
     if response.status_code == 200:
         record = response.json()
-        return {'zenodo_views': record['stats']['unique_views'],'zenodo_downloads': record['stats']['unique_downloads'], 'updated_at': record['updated']}
+        return {'zenodo_views': record['stats']['unique_views'],'zenodo_downloads': record['stats']['unique_downloads'], 'updated_at': record['updated'], 'created_at': record['created']}
     else:
         print(f'Could not collect stats for {url}')
         return
@@ -44,10 +44,11 @@ def figshare_stats(url):
     if response.status_code == 200:
         record = response.json()
         updated = record['modified_date']
+        created = record['created_date']
     else:
         updated = 'NA'
 
-    return {'figshare_views':views, 'figshare_downloads': downloads, 'updated_at': updated}
+    return {'figshare_views':views, 'figshare_downloads': downloads, 'updated_at': updated, 'created_at': created}
 
 def github_stats(url):
     repo = url.split('github.com/')[1]
@@ -67,7 +68,7 @@ def github_stats(url):
     response = requests.get(f'https://api.github.com/repos/{repo}')
     if response.status_code == 200:
         repo_record = response.json()
-        return {'github_forks': repo_record.get('forks_count', 0),'github_stars': repo_record.get('stargazers_count', 0), 'updated_at': repo_record.get('updated_at', 'NA')}
+        return {'github_forks': repo_record.get('forks_count', 0),'github_stars': repo_record.get('stargazers_count', 0), 'updated_at': repo_record.get('updated_at', 'NA'), 'created_at': repo_record.get('created_at', 'NA'),'pushed_at': repo_record.get('pushed_at', 'NA'), 'name': repo_record.get('full_name', 'NA')}
     else:
         print(f'Could not collect stats for {url}')
         return

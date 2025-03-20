@@ -54,7 +54,7 @@ def aec_retention(results):
     for name in results.keys():
         print(f'{name};{";".join(str(n) for n in retention_counts[name].values())}')
 
-def aec_by_country(results):
+def classify_aec_by_country(results):
     university_info = json.loads(download_file("https://github.com/Hipo/university-domains-list/raw/refs/heads/master/world_universities_and_domains.json"))
     university_info.extend([
         {'name': 'télécom sudparis', 'country': 'France'},
@@ -119,6 +119,11 @@ def aec_by_country(results):
                 else:
                     failed.append(affiliation)
                     print(f'Failed {affiliation} in {best_match["country"]} with ratio {best_match_ratio}')
+
+    return per_year_country_stats, failed
+
+def aec_by_country(results):
+    per_year_country_stats, failed = classify_aec_by_country(results)
 
     # get all affiliations
     countries = set()
