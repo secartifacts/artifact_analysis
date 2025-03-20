@@ -79,13 +79,16 @@ def aec_badges_per_paper():
     plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1])+1, 1))
     badge_acceptance_rates.savefig('figures/eurosys_badge_percent_paper.pdf', bbox_inches='tight')
 
-def extract_aec_country():
-    if os.path.exists('cache/aec_by_country.json'):
-        with open('cache/aec_by_country.json', 'r') as f:
-            return json.load(f)
+def extract_aec_countries():
+    if os.path.exists('cache/aec_by_country.json') and os.path.exists('cache/sorted_countries.json'):
+        with open('cache/aec_by_country.json', 'r') as f, open('cache/sorted_countries.json', 'r') as s:
+            return json.load(s), json.load(f)
     # committee location
     eurosys_aec = get_committees('eurosys20', 'sys')
     aec_by_country, failed = classify_aec_by_country(eurosys_aec)
+    with open('cache/aec_by_country.json', 'w') as f:
+        json.dump(aec_by_country, f)
+
     countries = {}
     for country_year in aec_by_country.values():
         for country in country_year.keys():
@@ -96,13 +99,12 @@ def extract_aec_country():
 
     sorted_countries = sorted(countries.items(), key=lambda x: x[1], reverse=True)
 
-    with open('cache/aec_by_country.json', 'w') as f:
+    with open('cache/sorted_countries.json', 'w') as f:
         json.dump(sorted_countries, f, indent=4)
-
     return sorted_countries, aec_by_country
 
 def aec_country():
-    sorted_countries, aec_by_country = extract_aec_country()
+    sorted_countries, _ = extract_aec_countries()
 
     aec_by_country_f = plt.figure(5)
     plt.bar([x[0] for x in sorted_countries[:10]], [x[1] for x in sorted_countries[:10]])
@@ -113,7 +115,7 @@ def aec_country():
     aec_by_country_f.savefig('figures/eurosys_aec_by_country.pdf', bbox_inches='tight')
 
 def aec_country_by_year():
-    sorted_countries, aec_by_country = extract_aec_country()
+    sorted_countries, aec_by_country = extract_aec_countries()
 
     # committee location by year for top 15
     aec_by_country_year = {}
@@ -230,6 +232,8 @@ def main():
     # Create 'figures' folder if it doesn't exist
     os.makedirs('figures', exist_ok=True)
     os.makedirs('cache', exist_ok=True)
+
+    plt.rc('font', size=12)
 
     parser = argparse.ArgumentParser(description='Plotting figures for EuroSys')
     parser.add_argument('--plot_all', action='store_true', help='Plot all figures')
