@@ -111,7 +111,6 @@ def aec_country():
     plt.xticks(rotation=45, ha='right')
     plt.xlabel('Country')
     plt.ylabel('Number of AEC members')
-    plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1])+1, 1))
     aec_by_country_f.savefig('figures/eurosys_aec_by_country.pdf', bbox_inches='tight')
 
 def aec_country_by_year():
@@ -134,7 +133,7 @@ def aec_country_by_year():
     plt.ylabel('Number of AEC members')
     plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1])+1, 1))
     plt.legend(loc='upper right')
-    aec_by_country_f.savefig(f'figures/eurosys_aec_by_country.pdf', bbox_inches='tight')
+    aec_by_country_f.savefig(f'figures/eurosys_aec_by_country_per_year.pdf', bbox_inches='tight')
 
 def get_artifact_stats():
     # cdf for stars/forks/view/downloads of artifacts
