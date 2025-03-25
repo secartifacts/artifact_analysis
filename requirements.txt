@@ -4,3 +4,4 @@ pytrie==0.4.0
 PyYAML==6.0.2
 Requests==2.32.3
 thefuzz==0.22.1
+pycountry_convert==0.7.2
