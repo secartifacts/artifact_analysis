@@ -1,62 +1,82 @@
 [
     [
         "United States",
-        62
+        112
+    ],
+    [
+        "China",
+        20
     ],
     [
         "United Kingdom",
+        15
+    ],
+    [
+        "Hong Kong",
+        12
+    ],
+    [
+        "Germany",
         11
     ],
     [
         "Singapore",
-        9
+        11
     ],
     [
-        "China",
-        9
+        "Taiwan",
+        10
     ],
     [
         "Switzerland",
+        9
+    ],
+    [
+        "Italy",
         8
     ],
     [
-        "Taiwan, Province of China",
-        6
-    ],
-    [
-        "Germany",
-        5
+        "Spain",
+        8
     ],
     [
         "Japan",
-        5
+        7
     ],
     [
-        "Hong Kong",
+        "Canada",
+        7
+    ],
+    [
+        "Greece",
+        6
+    ],
+    [
+        "France",
+        6
+    ],
+    [
+        "Portugal",
         5
     ],
     [
         "Brazil",
-        4
-    ],
-    [
-        "Italy",
-        4
-    ],
-    [
-        "Greece",
         3
     ],
     [
-        "France",
-        2
+        "Netherlands",
+        3
     ],
     [
-        "Netherlands",
-        2
+        "Nigeria",
+        3
     ],
     [
         "Belgium",
+        2
+    ],
+    [
+        "Iran",
         2
     ],
     [
@@ -64,19 +84,19 @@
         2
     ],
     [
-        "Nigeria",
+        "Norway",
         2
     ],
     [
-        "Spain",
+        "Saudi Arabia",
+        2
+    ],
+    [
+        "Korea, Republic of",
         2
     ],
     [
         "Israel",
-        1
-    ],
-    [
-        "Iran",
         1
     ],
     [
@@ -100,14 +120,6 @@
         1
     ],
     [
-        "Kyrgyzstan",
-        1
-    ],
-    [
-        "Portugal",
-        1
-    ],
-    [
         "Poland",
         1
     ],
@@ -128,15 +140,27 @@
         1
     ],
     [
-        "Norway",
-        1
-    ],
-    [
         "Hungary",
         1
     ],
     [
         "Romania",
+        1
+    ],
+    [
+        "Finland",
+        1
+    ],
+    [
+        "South Korea",
+        1
+    ],
+    [
+        "Bolivia, Plurinational State of",
+        1
+    ],
+    [
+        "Austria",
         1
     ]
 ]
