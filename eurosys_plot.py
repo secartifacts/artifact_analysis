@@ -55,6 +55,31 @@ def percent_submitted():
     plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1])+1, 1))
     percent_submitted_f.savefig('figures/eurosys_percent_submitted.pdf', bbox_inches='tight')
 
+def combined_number_papers_artifacts_percent_submitted():
+    # Combined figure with two y-axes
+    combined_figure = plt.figure(9)
+    ax1 = combined_figure.add_subplot(111)
+
+    # Plot absolute numbers on the left y-axis
+    lns1 = ax1.plot(eurosys_data['Years'], eurosys_data['AE submissions'], linewidth=2, label="Artifact submissions")
+    lns2 = ax1.plot(eurosys_data['Years'], eurosys_data['Accepted Papers'], linewidth=2, label="Accepted papers")
+    ax1.set_xlabel('Year')
+    ax1.set_ylabel('Number of artifacts or accepted papers')
+    #ax1.legend(loc='upper left')
+
+    # Create a second y-axis for percentages
+    ax2 = ax1.twinx()
+    lns3 = ax2.plot(eurosys_data['Years'], eurosys_data['% submitted'], linewidth=2, label="% Submitted", color='green', linestyle='--')
+    ax2.set_ylabel('Accepted papers submitting artifacts in %')
+    ax2.axis([2020.5, 2025.5, 0, 101])
+    #ax2.legend(loc='lower right')
+    lns = lns1+lns2+lns3
+    labs = [l.get_label() for l in lns]
+    ax1.legend(lns, labs, loc='upper left')
+
+    # Save the figure
+    combined_figure.savefig('figures/eurosys_combined_papers_artifacts_percent.pdf', bbox_inches='tight')
+
 def badge_acceptance_rates():
     # badge acceptance rates
     badge_acceptance_rates = plt.figure(2)
@@ -307,6 +332,7 @@ def main():
     parser.add_argument('--plot_all', action='store_true', help='Plot all figures')
     parser.add_argument('--plot_number_papers_artifacts', action='store_true', help='Plot number of papers and artifacts')
     parser.add_argument('--plot_percent_submitted', action='store_true', help='Plot percent submitted')
+    parser.add_argument('--plot_combined', action='store_true', help='Plot combined number of papers, artifacts, and percent submitted')
     parser.add_argument('--plot_badge_acceptance_rates', action='store_true', help='Plot badge acceptance rates')
     parser.add_argument('--plot_aec_badges_per_paper', action='store_true', help='Plot badges per paper')
     parser.add_argument('--plot_aec_country', action='store_true', help='Plot committee location')
@@ -321,6 +347,8 @@ def main():
         number_papers_artifacts()
     if args.plot_percent_submitted or args.plot_all:
         percent_submitted()
+    if args.plot_combined:
+        combined_number_papers_artifacts_percent_submitted()
     if args.plot_badge_acceptance_rates or args.plot_all:
         badge_acceptance_rates()
     if args.plot_aec_badges_per_paper or args.plot_all:
