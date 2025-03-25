@@ -2,11 +2,13 @@ import argparse
 import json
 import matplotlib.pyplot as plt
 import os
+import shutil
 from sys_sec_committee_scrape import get_committees
 from committee_statistics import classify_aec_by_country
 from sys_sec_artifacts_results_scrape import get_ae_results
 from collect_artifact_stats import get_all_artifact_stats
 from test_artifact_repositories import check_artifact_exists
+from pycountry_convert import country_name_to_country_alpha2, country_alpha2_to_continent_code
 
 # eurosys 2021-2025 data
 eurosys_data = {
@@ -86,6 +88,7 @@ def extract_aec_countries():
     # committee location
     eurosys_aec = get_committees('eurosys20', 'sys')
     aec_by_country, failed = classify_aec_by_country(eurosys_aec)
+    print(f'Number failed to identify{len(failed)}')
     with open('cache/aec_by_country.json', 'w') as f:
         json.dump(aec_by_country, f)
 
@@ -134,6 +137,72 @@ def aec_country_by_year():
     plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1])+1, 1))
     plt.legend(loc='upper right')
     aec_by_country_f.savefig(f'figures/eurosys_aec_by_country_per_year.pdf', bbox_inches='tight')
+
+def aec_continents():
+    sorted_countries, aec_by_country = extract_aec_countries()
+
+    continent_map = {
+        'AF': 'Africa',
+        'AS': 'Asia',
+        'EU': 'Europe',
+        'NA': 'North America',
+        'SA': 'South America',
+        'OC': 'Oceania',
+        'AN': 'Antarctica'
+    }
+
+    continent_counts = {}
+
+    for country, count in sorted_countries:
+        try:
+            alpha2 = country_name_to_country_alpha2(country)
+            continent_code = country_alpha2_to_continent_code(alpha2)
+            continent = continent_map[continent_code]
+            if continent not in continent_counts:
+                continent_counts[continent] = 0
+            continent_counts[continent] += count
+        except KeyError:
+            print(f"Could not map country {country} to a continent.")
+
+    aec_by_continent_f = plt.figure(7)
+    plt.bar(continent_counts.keys(), continent_counts.values())
+    plt.xticks(rotation=45, ha='right')
+    plt.xlabel('Continent')
+    plt.ylabel('Number of AEC members')
+    aec_by_continent_f.savefig('figures/eurosys_aec_by_continent.pdf', bbox_inches='tight')
+
+def aec_continents_by_year():
+    _, aec_by_country = extract_aec_countries()
+
+    continent_map = {
+        'AF': 'Africa',
+        'AS': 'Asia',
+        'EU': 'Europe',
+        'NA': 'North America',
+        'SA': 'South America',
+        'OC': 'Oceania'
+    }
+
+    continent_counts_by_year = {continent: [0] * len(eurosys_data['Years']) for continent in continent_map.values()}
+
+    for year_idx, year in enumerate(eurosys_data['Years']):
+        for country, count in aec_by_country.get(f'eurosys{int(year)}', {}).items():
+            try:
+                alpha2 = country_name_to_country_alpha2(country)
+                continent_code = country_alpha2_to_continent_code(alpha2)
+                continent = continent_map[continent_code]
+                continent_counts_by_year[continent][year_idx] += count
+            except KeyError:
+                print(f"Could not map country {country} to a continent.")
+
+    aec_by_continent_year_f = plt.figure(8)
+    for continent, counts in continent_counts_by_year.items():
+        plt.plot(eurosys_data['Years'], counts, linewidth=2, label=continent)
+    plt.xlabel('Year')
+    plt.ylabel('Number of AEC members')
+    plt.xticks(range(int(eurosys_data['Years'][0]), int(eurosys_data['Years'][-1]) + 1, 1))
+    plt.legend(loc='upper left')
+    aec_by_continent_year_f.savefig('figures/eurosys_aec_by_continent_per_year.pdf', bbox_inches='tight')
 
 def get_artifact_stats():
     # cdf for stars/forks/view/downloads of artifacts
@@ -243,6 +312,8 @@ def main():
     parser.add_argument('--plot_aec_country', action='store_true', help='Plot committee location')
     parser.add_argument('--plot_aec_country_by_year', action='store_true', help='Plot committee location by year')
     parser.add_argument('--plot_cdf_artifact_stats', action='store_true', help='Plot cdf for stars/forks/view/downloads of artifacts')
+    parser.add_argument('--plot_aec_continents', action='store_true', help='Plot AEC members by continent')
+    parser.add_argument('--plot_aec_continents_by_year', action='store_true', help='Plot AEC members by continent over the years')
     parser.add_argument('--delete_cache', action='store_true', help='Delete json cache files')
     args = parser.parse_args()
 
@@ -260,12 +331,15 @@ def main():
         aec_country_by_year()
     if args.plot_cdf_artifact_stats or args.plot_all:
         cdf_artifact_stats()
+    if args.plot_aec_continents or args.plot_all:
+        aec_continents()
+    if args.plot_aec_continents_by_year or args.plot_all:
+        aec_continents_by_year()
     if args.delete_cache:
-        os.remove('cache/aec_by_country.json')
-        os.remove('cache/stars.json')
-        os.remove('cache/forks.json')
-        os.remove('cache/views.json')
-        os.remove('cache/downloads.json')
+        try:
+            shutil.rmtree('cache/')
+        except FileNotFoundError:
+            pass
 
 
 if __name__ == "__main__":
