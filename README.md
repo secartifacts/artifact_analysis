@@ -1,3 +1,7 @@
+# Archived repository
+
+Future updates to this repository will be done in a new repository: https://github.com/researchartifacts/artifact_analysis
+
 # Artifact Analysis Scripts
 
 Analyzing artifact websites like sec/sysartifacts.github.io using simple python scripts.
