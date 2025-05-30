@@ -113,7 +113,7 @@ def extract_aec_countries():
     # committee location
     eurosys_aec = get_committees('eurosys20', 'sys')
     aec_by_country, failed = classify_aec_by_country(eurosys_aec)
-    print(f'Number failed to identify{len(failed)}')
+    print(f'Number failed to identify {len(failed)}')
     with open('cache/aec_by_country.json', 'w') as f:
         json.dump(aec_by_country, f)
 
@@ -236,7 +236,7 @@ def get_artifact_stats():
             ae_results = json.load(f)
     else:
         url_keys = ['repository_url', 'artifact_url']
-        ae_results = get_ae_results('eurosys202[2-5]', 'sys')
+        ae_results = get_ae_results('eurosys202[1-5]', 'sys')
         ae_results, _, _ = check_artifact_exists(ae_results, url_keys)
         ae_results = get_all_artifact_stats(ae_results, url_keys)
         with open('cache/ae_stats.json', 'w') as f:

@@ -1,9 +1,8 @@
 import requests
-from bs4 import BeautifulSoup
 import re
 import yaml
 import argparse
-from sys_sec_scrape import get_soup, github_urls, download_file
+from sys_sec_scrape import get_conferences_from_prefix, github_urls, download_file
 
 def get_committee_for_conference(conference, prefix):
     base_url = github_urls[prefix]['raw_base_url'] + conference
@@ -44,12 +43,15 @@ def get_committee_for_conference(conference, prefix):
 
 def get_committees(conference_regex, prefix):
     results = {}
-    soup = get_soup(github_urls[prefix]['base_url'])
-    links = soup.find_all('a', href=True)
-
-    for link in links:
-        if re.search(conference_regex, link['href']):
-            name = link['href'].split('/')[-1]
+    # get conference name from prefix
+    conferences = get_conferences_from_prefix(prefix)
+    if conferences is None:
+        print(f"Invalid prefix: {prefix}")
+        return results
+    # get the base url for the conference
+    for conf in conferences:
+        if re.search(conference_regex, conf['name']):
+            name = conf['name']
             if name in results:
                 continue
             # add year

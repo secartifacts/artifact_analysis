@@ -157,7 +157,7 @@ def aec_by_country(results):
             sum += per_year_country_stats[conf].get(country, 0)
         print(f'{sum}')
 
-    print(f'Number failed to identify{len(failed)}')
+    print(f'Number failed to identify {len(failed)}')
     print(f'List of failed affiliations:{", ".join(failed)}')
 
 def main():
